@@ -34,14 +34,13 @@ const inverseNumber= () => {
 const handleOperator = (operator) => {
    if (!calculator.waitingForSecondNumber) {
        calculator.operator = operator;
-       calculator.waitingForSecondNumber = true;
        calculator.firstNumber = calculator.displayNumber;
        calculator.displayNumber = '0';
-   } else {
-       alert('Operator sudah ditetapkan')
-   }
+   } else if (calculator.operator === ``) {
+    firstNumber = displayNumber}
+        calculator.operator = Operator
+        displayNumber = `0`
 }
-
 // else if (calculator.operator === ``) {
 //        firstNumber = displayNumber
 //    }
